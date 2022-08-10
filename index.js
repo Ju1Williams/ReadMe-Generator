@@ -21,47 +21,43 @@ const questions = [
     },
     {
         type: 'input',
-        name: '',
-        message: 'What is the Title of your project'
+        name: 'Contents',
+        message: 'Table of Contents'
+
+    },
+    {
+        type: 'confirm',
+        name: 'Contributers',
+        message: 'Were there any contributors to this project?'
 
     },
     {
         type: 'input',
-        name: 'Project Title',
-        message: 'What is the Title of your project'
+        name: 'Instructions',
+        message: 'What were the Instructions for this assignment'
+
+    },
+    {
+        type: 'choice',
+        name: 'License',
+        message: 'What license did you use',
+        choice: [('MIT', 'ISC', 'LIT')]
 
     },
     {
         type: 'input',
-        name: 'Project Title',
-        message: 'What is the Title of your project'
+        name: 'Github',
+        message: 'What is your github Username',
 
     },
     {
         type: 'input',
-        name: 'Project Title',
-        message: 'What is the Title of your project'
-
-    },
-    {
-        type: 'input',
-        name: 'Project Title',
-        message: 'What is the Title of your project'
-
-    },
-    {
-        type: 'input',
-        name: 'Project Title',
-        message: 'What is the Title of your project'
-
-    },
-    {
-        type: 'input',
-        name: 'Project Title',
-        message: 'What is the Title of your project'
+        name: 'Email',
+        message: 'What is your email'
 
     },
 ]
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName,data, function(error){
